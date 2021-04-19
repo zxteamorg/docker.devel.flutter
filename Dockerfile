@@ -11,5 +11,3 @@ RUN apt-get update && apt-get install -y curl git unzip xz-utils zip wget && rm 
 RUN cd /opt && wget -qO- "https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_${FLUTTER_SDK_VERSION}-stable.tar.xz" | tar -xJ
 
 ENV PATH "/opt/flutter/bin:${PATH}"
-
-ENTRYPOINT ["/bin/bash"]
